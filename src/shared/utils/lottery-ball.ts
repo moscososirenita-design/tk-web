@@ -33,21 +33,21 @@ export function getLotteryBallColor(num: number, explicitLabel?: string | null):
 export function getLotteryBallFilledClass(num: number, explicitLabel?: string | null): string {
   switch (getLotteryBallColor(num, explicitLabel)) {
     case "red":
-      return "border-rose-100/90 from-rose-400 via-pink-500 to-orange-500 shadow-rose-500/35"
+      return "border-red-100/90 from-red-500 via-red-600 to-red-700 shadow-red-600/40"
     case "blue":
-      return "border-sky-100/90 from-sky-400 via-cyan-500 to-blue-600 shadow-sky-500/35"
+      return "border-blue-100/90 from-blue-500 via-blue-600 to-blue-700 shadow-blue-600/40"
     default:
-      return "border-emerald-100/90 from-emerald-400 via-teal-500 to-green-600 shadow-emerald-500/35"
+      return "border-green-100/90 from-green-500 via-green-600 to-green-700 shadow-green-600/40"
   }
 }
 
 export function getLotteryBallOutlineClass(num: number, explicitLabel?: string | null): string {
   switch (getLotteryBallColor(num, explicitLabel)) {
     case "red":
-      return "border-rose-300 text-rose-500 shadow-rose-500/10"
+      return "border-red-400 text-red-600 shadow-red-600/10"
     case "blue":
-      return "border-blue-300 text-blue-500 shadow-blue-500/10"
+      return "border-blue-400 text-blue-600 shadow-blue-600/10"
     default:
-      return "border-emerald-300 text-emerald-500 shadow-emerald-500/10"
+      return "border-green-400 text-green-600 shadow-green-600/10"
   }
 }
