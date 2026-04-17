@@ -1,0 +1,19 @@
+services:
+  tk-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: tk-web:latest
+    container_name: tk-web
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      API_PROXY_TARGET: http://tk-api:8088
+    ports:
+      - "3000:3000"
+    networks:
+      - tk-network
+
+networks:
+  tk-network:
+    external: true

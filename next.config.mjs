@@ -47,7 +47,7 @@ const nextConfig = {
           "style-src 'self' 'unsafe-inline'",
           "img-src 'self' data: blob: https:",
           "media-src 'self' data: blob: https:",
-          "connect-src 'self' https: ws: wss:",
+          "connect-src 'self' http: https: ws: wss:",
           "font-src 'self' data:",
           "object-src 'none'",
           "frame-ancestors 'self'",
